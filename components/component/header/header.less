@@ -1,0 +1,34 @@
+@height:50px;
+@lineHeight:30px;
+
+.header{
+  border: 0;
+  background-color: #293c55 !important;
+  min-height: @height;
+
+  .navbar-brand{
+    height: @height;
+    font-size: 20px;
+    line-height: @lineHeight;
+  }
+
+  .navbar-nav{
+    li{
+      height: @height;
+      a{
+        height: @height;
+        line-height: @lineHeight;
+      }
+    }
+  }
+
+  .navbar-toggle{
+    height: @height;
+    line-height: @lineHeight;
+  }
+
+  .navbar-userinfo{
+    line-height: 50px;
+    color: #fff;
+  }
+}

@@ -1,0 +1,25 @@
+.header {
+  border: 0;
+  background-color: #293c55 !important;
+  min-height: 50px;
+}
+.header .navbar-brand {
+  height: 50px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.header .navbar-nav li {
+  height: 50px;
+}
+.header .navbar-nav li a {
+  height: 50px;
+  line-height: 30px;
+}
+.header .navbar-toggle {
+  height: 50px;
+  line-height: 30px;
+}
+.header .navbar-userinfo {
+  line-height: 50px;
+  color: #fff;
+}

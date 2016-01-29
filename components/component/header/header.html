@@ -1,0 +1,34 @@
+<nav class="header navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">BI-DEMO</a>
+    </div>
+    <div class="collapse navbar-collapse navbar-collapse-example" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li :class="{'active':target=='home'}"><a href="#home">专题管理</a></li>
+            <li :class="{'active':target=='component'}"><a href="#component">组件管理</a></li>
+            <li><a href="#">系统管理</a></li>
+            <li><a href="#">运行监控</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-userinfo">
+                欢迎您，管理员
+            </li>
+            <li>
+                <a href="#"><span class="icon-search"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-refresh"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-off"></span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+

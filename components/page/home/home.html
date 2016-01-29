@@ -1,0 +1,85 @@
+<div class="page-home">
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top: 50px" role="navigation">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="javascript:;" v-on:click="onShowSlider">
+                        全部专题
+                        <span class="icon-chevron-down"></span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="javascript:;"  >
+                        新增
+                    <span class="icon-plus">
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        筛选
+                        <span class="icon-chevron-down"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="slider-left" v-bind:style="{left:leftSlider.left+'px'}" v-on:click="onSliderClick">
+        <div class="panel">
+            <div class="panel-heading">
+                <label>专题分组</label>
+                <ul class="pull-right">
+                    <li>
+                        <a href="javascript:;" v-on:click="onShowAdd"><span class="icon-plus" v-bind:class="{'icon-close':leftSlider.showAdd==true}"></span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" v-on:click="onPin" ><span class="icon-pushpin " v-bind:class="{'icon-unpin':leftSlider.pin}"></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-body">
+                <div class="form-horizontal" v-if="leftSlider.showAdd">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="分组名称" />
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="分组描述"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="button" class="btn btn-primary btn-block" value="创建">
+                    </div>
+                </div>
+
+                <div class="list-group">
+                    <a href="javascript:;" class="list-group-item">
+                        秀源污水
+                    </a>
+                    <a href="javascript:;" class="list-group-item">
+                        钱江水利
+                    </a>
+                    <a href="javascript:;" class="list-group-item">
+                        秀源污水
+                    </a>
+                    <a href="javascript:;" class="list-group-item">
+                        钱江水利
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section v-bind:style="section" class=" items col-md-12">
+        <div v-for="l in list" class="col-md-3 col-lg-3 col-sm-4 col-xs-6">
+            <img v-lazy="'/static/images/'+l.name" class="img-thumbnail" alt="">
+            <div class="hover">
+                <div class="content">
+                    <h3>嘉兴嘉源</h3>
+                    <p>嘉源2015产销差专题图</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

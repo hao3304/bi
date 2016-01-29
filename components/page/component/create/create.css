@@ -1,0 +1,23 @@
+.page-component-create section {
+  position: fixed;
+  top: 90px;
+  bottom: 0;
+  width: 100%;
+}
+.page-component-create section .h-bar,
+.page-component-create section .v-bar {
+  position: absolute;
+  background-color: #025f6a;
+}
+.page-component-create section .script-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ccc;
+}
+.page-component-create section .v-bar {
+  width: 4px;
+  height: 100%;
+  cursor: w-resize;
+}
